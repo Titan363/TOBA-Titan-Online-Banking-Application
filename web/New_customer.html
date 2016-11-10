@@ -12,9 +12,30 @@ and open the template in the editor.
     </head>
     <body>
     <nav>
-        <a>Home</a>
-        <a>Login</a>
-    </nav>        
+        <a href="index.xhtml">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+        <form method="post" action="NewCustomerServlet">
+            <p>
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName"><br />
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName"><br />
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone"><br />
+                <label for="address">Street Address: </label>
+                <input type="text" id="address"><br />
+                <label for="city">City: </label>
+                <input type="text" id="city"><br />
+                <label for="state">State: </label>
+                <input type="text" id="state"><br />
+                <label for="zipCode">Zip Code: </label>
+                <input type="text" id="zipCode"><br />
+                <label for="email">Email Address: </label>
+                <input type="text" id="email"><br />
+                <input type="submit" id="submit" value="Log In">
+            </p>
+        </form>
         <div>Create a form with a submit button and the following fields: First Name, Last Name, Phone number, Address, City, State, Zipcode, Email.</div>
     </body>
 </html>

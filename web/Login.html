@@ -4,17 +4,30 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
     <head>
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <h1>Titan Online Banking Application</h1>
     <nav>
-        <a>Home</a>
-        <a>Login</a>
+        <a href="index.xhtml">Home</a>
+        <a href="login.html">Login</a>
     </nav>
         <div>Create Login form with Username and Password fields, Link to New Customer page</div>
+        <form method="post" action="LoginServlet">
+            <p>
+                <label for="userName">User Name: </label>
+                <input type="text" id="userName"><br />
+                <label for="password">Password: </label>
+                <input type="text" id="password"><br />
+                <input type="submit" id="submitLogin" value="send">
+            </p>
+        </form>
+        <a href="New_customer.html">New User</a><br />
+        <a href="">Reset Password</a>
     </body>
 </html>

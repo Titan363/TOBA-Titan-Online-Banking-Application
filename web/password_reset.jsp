@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Error_404
-    Created on : Oct 24, 2016, 7:31:24 PM
+    Document   : password_reset
+    Created on : Nov 9, 2016, 6:24:22 PM
     Author     : Titan
 --%>
 
@@ -9,13 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Error 404</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1>Error Code 404</h1>
-        <nav>
-        <a href="index.xhtml">Home</a>
-        <a href="login.html">Login</a>
-    </nav>
+        <h1>Hello World!</h1>
     </body>
 </html>

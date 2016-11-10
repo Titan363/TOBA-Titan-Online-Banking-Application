@@ -1,20 +1,28 @@
-<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-    <head>
-        <title>Account activity</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<c:import url="/includes/header.html" />
     <nav>
-        <a>Home</a>
-        <a>Login</a>
+        <a href="index.xhtml">Home</a>
+        <a href="login.html">Login</a>
     </nav>
         <div>Customer Account information and activity will be posted here</div>
-    </body>
-</html>
+    <c:if test="${USER.session !=null}">
+        <form action="User" method="post">
+            <label>Email: </label>
+            <span><c:out value="${User.email}"/></span><br />
+            <label>First Name: </label>
+            <span><c:out value="${User.firstName"/></span><br />
+            <label>Last Name: </label>
+            <span><c:out value="${User.lastName"/></span><br />
+        </form>
+    </c:if>
+    <c:if test="${USER.session =null}">
+        <p>Not Logged In.</p>
+    </c:if>
+        <c:import url="/includes/footer.jsp" />
+    

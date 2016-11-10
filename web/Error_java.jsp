@@ -13,5 +13,9 @@
     </head>
     <body>
         <h1>Java error has occured</h1>
+        <nav>
+        <a href="index.xhtml">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
     </body>
 </html>
